@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RealEstate.Pages.RegisterPage"
+             Title="Register Account">
+    <!-- Margin (right, bottom, left, up)-->
+    <VerticalStackLayout VerticalOptions="Center" Margin="20,0,20,0">
+        <Image Source="hello" HeightRequest="90" WidthRequest="90" VerticalOptions="Start"/>
+        <Label Text="Create a new account" FontSize="Large" HorizontalOptions="Center"/>
+        <Label HorizontalOptions="Center" TextColor="LightSlateGray" Text="Please enter your register information."/>
+        <Entry x:Name="EntName" Placeholder="Name"/>
+        <Entry x:Name="EntEmail" Placeholder="Email" Keyboard="Email"/>
+        <Entry x:Name="EntPhone" Placeholder="Phone"/>
+        <Entry x:Name="EntPassword" Placeholder="Password" IsPassword="True"/>
+        <Button x:Name="BtnRegister" Text="Register" HeightRequest="50" FontSize="Medium" Clicked="BtnRegister_Clicked" BackgroundColor="#1d97ab"/>
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="1">
+            <Label Text="Already have an account?" FontSize="Medium"/>
+            <Label Text="Sign in" FontSize="Medium" TextColor="#1d97ab"/>
+            <HorizontalStackLayout.GestureRecognizers>
+                <TapGestureRecognizer x:Name="SignIn" Tapped="SignIn_Tapped"/>
+            </HorizontalStackLayout.GestureRecognizers>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
