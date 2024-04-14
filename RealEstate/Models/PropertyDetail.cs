@@ -13,6 +13,7 @@ public sealed class PropertyDetail
     public int Price { get; set; }
     [JsonProperty("imageUrl")]
     public string ImageUrl { get; set; }
+    public string FullImageUrl => ApiService.ApiUrl + ImageUrl;
     [JsonProperty("phone")]
     public string Phone { get; set; }
     [JsonProperty("bookmark")]

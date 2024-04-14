@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RealEstate.Pages.PropertiesListPage"
              Title="PropertiesListPage">
-    <CollectionView x:Name="CvProperties" Margin="10" SelectionMode="Single">
+    <CollectionView x:Name="CvProperties" Margin="10" SelectionMode="Single" SelectionChanged="CvProperties_SelectionChanged">
         <CollectionView.ItemsLayout>
             <LinearItemsLayout ItemSpacing="20" Orientation="Vertical"/>
         </CollectionView.ItemsLayout>
