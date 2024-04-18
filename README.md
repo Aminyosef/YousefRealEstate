@@ -1,5 +1,3 @@
-Sure, here's a sample README file for a real estate project:
-
 Real Estate Project
 This project is a comprehensive web application built using [programming language/framework] that aims to simplify the real estate buying and selling process for both buyers and sellers. It provides a user-friendly platform for property listings, search functionality, and advanced features to streamline the real estate experience.
 
